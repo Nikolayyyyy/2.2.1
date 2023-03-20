@@ -1,7 +1,12 @@
 package hiber.model;
 
-
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.OneToOne;
 
 @Entity
 @Table(name = "users")
@@ -9,7 +14,7 @@ public class User {
 
    @Id
    @Column(name = "user_id")
-   @GeneratedValue(strategy = GenerationType.AUTO)
+   @GeneratedValue(strategy = GenerationType.IDENTITY)
    private Long id;
 
    @Column(name = "name")
@@ -22,8 +27,6 @@ public class User {
    private String email;
 
    @OneToOne
-//   @MapsId
-//   @JoinColumn(name = "id")
    private Car car;
    public User() {}
    

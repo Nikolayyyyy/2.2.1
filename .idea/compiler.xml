@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="2.2.1PP — копия" />
         <module name="spring-hibernate" />
         <module name="2.2.1. spring_hibernate" />
       </profile>
